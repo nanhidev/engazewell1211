@@ -13,6 +13,11 @@ package com.project.runner;
     public class TestRunner extends AbstractTestNGCucumberTests {
         
         @Test(priority = 0)
+        public void runOpencreatenewjobopeningfor() {
+            runCucumberFeature("src/test/resources/com/engazewell1211/features/OpenCreateNewJobOpeningFor.feature");
+        }
+    
+    @Test(priority = 1)
         public void runLoginscreenforrecruitersPos() {
             runCucumberFeature("src/test/resources/com/engazewell1211/features/LoginScreenForRecruiters_pos.feature");
         }
